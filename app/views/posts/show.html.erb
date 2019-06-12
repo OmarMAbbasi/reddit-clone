@@ -1,0 +1,11 @@
+<main>
+  <h1><%= @post.title %> by <%= @post.author.username %></h1>
+
+  <div>
+    <label>Content:
+      <p><%= @post.content %></p>
+    </label>
+  </div>
+
+  <a href="<%= edit_post_url(@post) %>">Edit</a>
+</main>
